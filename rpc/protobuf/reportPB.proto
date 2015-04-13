@@ -1,0 +1,8 @@
+package com.jarvis.rpc.protobuf;
+
+message ReportBean {
+  required string taskId = 1;
+  required int32 status = 2;
+  required string message = 3;
+  required int64 reportTime = 4;
+}

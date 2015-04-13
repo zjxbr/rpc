@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.apache.hadoop.ipc.ProtocolSignature;
 
+import com.jarvis.rpc.protobuf.ReportPB.ReportBean;
+
 public class ProtocolReciverImpl implements ProtocolReciver {
 
 	@Override
@@ -21,7 +23,7 @@ public class ProtocolReciverImpl implements ProtocolReciver {
 	}
 
 	@Override
-	public boolean report(String msg) {
+	public boolean report(ReportBean msg) {
 		System.err.println(msg);
 		return true;
 	}

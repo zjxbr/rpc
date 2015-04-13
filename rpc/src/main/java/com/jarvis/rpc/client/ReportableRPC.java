@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import com.jarvis.rpc.ProtocolReciver;
 import com.jarvis.rpc.RPCServer;
+import com.jarvis.rpc.protobuf.ReportPB.ReportBean;
 
 public class ReportableRPC implements Reportable {
 
@@ -31,7 +32,7 @@ public class ReportableRPC implements Reportable {
 	}
 
 	@Override
-	public boolean report(String msg) {
+	public synchronized boolean report(ReportBean msg) {
 		return protocolReport.report(msg);
 	}
 
