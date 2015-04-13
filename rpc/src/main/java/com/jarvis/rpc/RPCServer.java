@@ -14,8 +14,8 @@ public class RPCServer {
 	public static void main(String[] args)
 			throws HadoopIllegalArgumentException, IOException {
 		Server server = new RPC.Builder(new Configuration())
-				.setProtocol(MyClientProtocol.class)
-				.setInstance(new MyClientProtocolImpl()).setBindAddress(host)
+				.setProtocol(ProtocolReciver.class)
+				.setInstance(new ProtocolReciverImpl()).setBindAddress(host)
 				.setPort(port).setNumHandlers(5).build();
 		server.start();
 	}
