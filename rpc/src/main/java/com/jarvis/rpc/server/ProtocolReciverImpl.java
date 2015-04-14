@@ -1,4 +1,4 @@
-package com.jarvis.rpc;
+package com.jarvis.rpc.server;
 
 import java.io.IOException;
 

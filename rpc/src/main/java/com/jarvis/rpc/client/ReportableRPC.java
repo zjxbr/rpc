@@ -10,9 +10,9 @@ import org.apache.hadoop.mapreduce.protocol.ClientProtocol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.jarvis.rpc.ProtocolReciver;
-import com.jarvis.rpc.RPCServer;
 import com.jarvis.rpc.protobuf.ReportPB.ReportBean;
+import com.jarvis.rpc.server.ProtocolReciver;
+import com.jarvis.rpc.server.RPCServer;
 
 public class ReportableRPC implements Reportable {
 
